@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento CSS</title>
+    <style>
+        main{
+            background-color: blue;
+            width: 500px;
+            height: 800px;
+            position: relative;
+        }
+        .a1{
+            width: 100px;
+            height: 50px;
+            background-color: bisque;
+            position: relative;
+            z-index: 1;
+        }
+        .a2{
+            width: 100px;
+            height: 50px;
+            background-color: brown;
+            position: relative;
+            top: -25px;
+            left: 25px;
+        }
+        .a3{
+            background-color: aquamarine;
+            border: solid 1px black;
+            width: 450px;
+            height: 100px;
+            position: absolute;
+        }
+        .box1{
+            background-color: red;
+            border: solid 1px black;
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .a4{
+            background-color: black;
+            color: white;
+            position: absolute;
+        }
+        .logotipo{
+            background-color: white;
+            color: blue;
+            border-radius: 10px;
+            padding: 10px;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        /*.txtRef{
+            background: linear-gradient(#000, #000c);
+            color: white;
+            padding: 10px;
+            z-index: 2;
+            position: fixed;
+            inset: 0;
+
+        }*/
+        .txtRef{
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            width: 150px;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="a1">A1</article>
+        <article class="a2">A2</article>
+        <article class="a3">
+            <div class="box1">BOX 1 re loco</div>
+        </article>
+        <article class="a4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p class="txtRef">texto de referencia</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <span class="logotipo">LOGOTIPO</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatum sint, explicabo impedit quos quod pariatur inventore fugit ea minima, ipsam officia distinctio. Excepturi, impedit. Sunt officia accusantium eos. Ea?</p>
+        </article>
+    </main>
+</body>
+</html>
